@@ -108,6 +108,7 @@ body {
   animation: fadeIn 1s ease-out 1.2s backwards;
   height: 300px;
   flex-wrap: wrap;
+  display: flex;
 }
 
 .about-section h2 {
