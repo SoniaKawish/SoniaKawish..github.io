@@ -86,6 +86,7 @@ body {
   .subtitle {
     font-size: 1.3rem;
   }
+  
 }
 
 @keyframes fadeIn {
@@ -106,7 +107,7 @@ body {
   color: #222;
   text-align: left;
   animation: fadeIn 1s ease-out 1.2s backwards;
-  height: 300px;
+  height: auto;
   flex-wrap: wrap;
   display: flex;
 }
@@ -165,7 +166,7 @@ body {
   justify-content: center;
 }
 /* Header style with rounded corners */
- header {
+/*  header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -173,11 +174,61 @@ body {
  background-color: hsl(0, 0%, 100%);
   color: black;
   border-radius: 15px;  /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: add some shadow for effect */
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */  /* Optional: add some shadow for effect */
    /*Optional: space around the header */
  /* margin-top: -150px;
   margin-left: 800px; */
-} 
+/* }  */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  position: relative;
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 100%;
+    /* right: 0; */
+    width: 200px;
+    padding: 1rem;
+    z-index: 100;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
 
 /*  header  {
   height: 100px ;  
