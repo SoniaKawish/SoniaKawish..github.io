@@ -571,7 +571,8 @@ video{
 
 }
 
-.container .card:hover .slide.slide2{
+.container .card:hover .slide.slide2,
+.container .card.active .slide.slide2 {
 
     transform: translateY(0);
 
@@ -638,13 +639,7 @@ video{
   font-weight: 600;
   /* width: 20%; */
 }
-@media (hover:none) {
-  .container .card.slide.slide1{
 
-    transform: translateY(0px);
-
-}
-}
 .site-footer{
   background-color: #000;
 }
