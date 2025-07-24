@@ -638,7 +638,7 @@ video{
   font-weight: 600;
   /* width: 20%; */
 }
-@media (max-width: 768px) {
+@media (hover:none) {
   .container .card.slide.slide1{
 
     transform: translateY(0px);
