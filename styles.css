@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
 }
 
-.container {
+.main-container {
   /* padding: 2rem; */
   padding-top: 0rem;
   display: flex;
@@ -332,6 +332,11 @@ header nav ul li a:hover {
   padding:40px;
   /* font-weight: bold; */
 }
+@media (max-width: 768px) {
+  .grid-item-text{
+    padding: 0px;
+  }
+}
 
 
 .features-grid{
@@ -339,7 +344,7 @@ header nav ul li a:hover {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
   margin: 2rem 0;
-  width: 100%;
+  /* width: 100%; */
   padding:30px;
   align-self: center;
 }
@@ -630,7 +635,7 @@ video{
   text-align: center;
   border-radius: 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  font-weight: 300;
+  font-weight: 600;
   /* width: 20%; */
 }
 .site-footer{
